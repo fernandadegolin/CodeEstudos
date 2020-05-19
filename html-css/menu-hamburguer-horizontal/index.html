@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Menu Hamburguer</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		:root {
+			background-color: steelblue;
+		}
+
+		/* === */
+		#navbar {
+			display: block;
+			position: fixed;
+			padding-top: 3.5rem;
+			top: 0;
+			width: 100%;
+			background-color: rgba(10, 10, 10, 0.5);
+		}
+
+		#navbar a {
+			display: block;
+			float: none;
+			padding: 1rem;
+			color: black;
+			font-size: 1.3rem;
+			text-decoration: none;
+		}
+
+		#navbar a:hover {
+			background-color: darkslateblue;
+			color: white;
+		}
+
+		#navbar label {
+			display: block;
+			position: absolute;
+			top: 0rem;
+			z-index: 2;
+		}
+
+		#navbar label b {
+			display: block;
+			margin: 0;
+			padding: 0 1rem;
+			font-size: 3rem;
+		}
+
+		#navbar label b:hover {
+			background-color: rgba(10, 10, 10, 0.5);
+			
+			color: blueviolet;
+		}
+
+		#menu {
+			display: none;
+			height: 0px;
+		}
+
+		@media (min-width: 460px) {
+			#navbar {
+				padding-top: 0; 
+			}
+
+			#navbar a {
+				float: left;
+			}
+
+			#navbar label {
+				display: none;
+			}
+
+			#menu {
+				display: block;
+			}
+		}
+				
+		input[id="checkmenu"] {
+			display: none;
+		}
+
+		input[id="checkmenu"]:checked ~ #menu {
+			display: block;
+			height: auto;
+		}
+		
+		main {
+			margin: 4rem;
+			height: 900px;
+			background: purple;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav id="navbar">
+	<input type="checkbox" id="checkmenu">
+	<label for="checkmenu">
+		<b>≡</b>
+	</label>
+	
+		<div id="menu">
+			<a href="#home">Página Inicial</a>
+			<a href="#news">Novidades</a>
+			<a href="#contact">Contato</a>
+		</div>
+	</nav>
+	
+	<main>
+
+	</main>
+	
+</body>
+</html>
