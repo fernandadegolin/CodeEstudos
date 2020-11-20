@@ -9,4 +9,4 @@ Navegador: [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
 
 ---
 ### GitHub: [**vh3rd7**](https://github.com/vh3rd7)  
-_05/2020_  
+_05/2020_ 
